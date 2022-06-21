@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/viewPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <ImageButton
+            android:id="@+id/iconRandom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/albumMusicPlayed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/imageMusicPlayed"
+            android:background="@color/transparent"
+            android:src="@android:mipmap/sym_def_app_icon" />
+
+        <ImageButton
+            android:id="@+id/iconRepeat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/albumMusicPlayed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/iconRandom"
+            android:background="@color/transparent"
+            android:src="@android:mipmap/sym_def_app_icon" />
+
+        <ImageView
+            android:id="@+id/imageMusicPlayed"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/namePlayer"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/albumMusicPlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameMusicPlayed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageMusicPlayed"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Galileo Galilei"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/namePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/meu_player"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nameMusicPlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namePlayer"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/imageMusicPlayed"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Galileo Galilei"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/playList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewPlayer"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="7dp"/>
+
+</RelativeLayout>
