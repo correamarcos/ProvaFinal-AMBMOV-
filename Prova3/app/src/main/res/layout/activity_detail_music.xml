@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.DetailMusicActivity">
+    tools:context=".ui.activities.DetailMusicActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/titleMusic"
@@ -14,7 +15,8 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_bold"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/optionsMusic"
@@ -30,7 +32,10 @@
         android:id="@+id/arrowBack"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/transparent" />
+        android:background="@color/transparent"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"/>
 
     <ImageView
         android:id="@+id/imageMusic"
@@ -49,7 +54,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto_bold"
         android:textAlignment="center"
-        android:textSize="19sp" />
+        android:textSize="19sp"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/artistMusic"
@@ -74,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/linearPlayer"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -83,37 +89,46 @@
             android:layout_marginBottom="50dp">
 
             <ImageButton
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/transparent"/>
+                android:id="@+id/btnRandom"
+                android:layout_width="60dp"
+                android:layout_height="76dp"
+                android:background="@color/transparent"
+                android:layout_toStartOf="@id/btnBack"
+                android:src="@drawable/random"/>
 
             <ImageButton
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/transparent"/>
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="76dp"
+                android:background="@color/transparent"
+                android:layout_toStartOf="@id/btnPlay"
+                android:src="@drawable/back"/>
 
             <ImageButton
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/transparent"/>
-
-            <ImageButton
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/transparent"/>
-
-            <ImageButton
-                android:layout_weight="1"
                 android:id="@+id/btnPlay"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/transparent"/>
+                android:layout_width="70dp"
+                android:layout_height="96dp"
+                android:background="@color/transparent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/play_96"/>
 
-        </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="60dp"
+                android:layout_height="76dp"
+                android:background="@color/transparent"
+                android:layout_toRightOf="@id/btnPlay"
+                android:src="@drawable/next"/>
+
+            <ImageButton
+                android:id="@+id/btnRepeat"
+                android:layout_width="60dp"
+                android:layout_height="76dp"
+                android:background="@color/transparent"
+                android:layout_toRightOf="@id/btnNext"
+                android:src="@drawable/repeat"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
