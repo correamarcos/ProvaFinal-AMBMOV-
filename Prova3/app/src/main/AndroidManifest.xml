@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prova3">
         <activity
+            android:name=".ui.activities.DetailMusicActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>

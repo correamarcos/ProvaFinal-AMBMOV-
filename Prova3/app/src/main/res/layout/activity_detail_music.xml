@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.DetailMusicActivity">
+
+    <TextView
+        android:id="@+id/titleMusic"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/optionsMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/optionsMusic"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageButton
+        android:id="@+id/arrowBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/transparent" />
+
+    <ImageView
+        android:id="@+id/imageMusic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titleMusic"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/nameMusic"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageMusic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="center"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/artistMusic"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/nameMusic"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/artistMusic"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/durationMusic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/linearPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp">
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

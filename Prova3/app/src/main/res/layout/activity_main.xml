@@ -15,20 +15,20 @@
             android:id="@+id/iconRandom"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/albumMusicPlayed"
+            android:layout_below="@+id/artistMusicPlayed"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_toEndOf="@id/imageMusicPlayed"
             android:background="@color/transparent"
-            android:src="@android:mipmap/sym_def_app_icon" />
+            android:src="" />
 
         <ImageButton
             android:id="@+id/iconRepeat"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/albumMusicPlayed"
+            android:layout_below="@+id/artistMusicPlayed"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_toEndOf="@id/iconRandom"
             android:background="@color/transparent"
             android:src="@android:mipmap/sym_def_app_icon" />
@@ -42,7 +42,7 @@
             android:layout_marginTop="40dp" />
 
         <TextView
-            android:id="@+id/albumMusicPlayed"
+            android:id="@+id/artistMusicPlayed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/nameMusicPlayed"
@@ -50,7 +50,6 @@
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/imageMusicPlayed"
             android:fontFamily="@font/roboto_regular"
-            android:text="Galileo Galilei"
             android:textSize="12sp" />
 
         <TextView
@@ -65,14 +64,13 @@
 
         <TextView
             android:id="@+id/nameMusicPlayed"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/namePlayer"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
             android:layout_toEndOf="@+id/imageMusicPlayed"
             android:fontFamily="@font/roboto_bold"
-            android:text="Galileo Galilei"
             android:textSize="15sp" />
 
 
@@ -83,9 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/viewPlayer"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="5dp"
         android:divider="@color/transparent"
-        android:dividerHeight="7dp"/>
+        android:dividerHeight="7dp" />
 
 </RelativeLayout>

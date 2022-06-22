@@ -27,11 +27,11 @@ class PlaylistAdapter(var context: Context, var list: List<Music>) : BaseAdapter
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
         var view = LayoutInflater.from(context).inflate(R.layout.music_playlist, null)
 
-        var imageAlbum = view.findViewById<ImageView>(R.id.imageAlbum)
-        imageAlbum.load(list[p0].thumb)
-
         var titleMusic = view.findViewById<TextView>(R.id.titleMusic)
         titleMusic.text = list[p0].title
+
+        var imageAlbum = view.findViewById<ImageView>(R.id.imageAlbum)
+        imageAlbum.load(list[p0].thumb)
 
         var artist = view.findViewById<TextView>(R.id.artistMusic)
         artist.text = list[p0].artist
